@@ -1,0 +1,16 @@
+<html>
+
+<body>
+    <form method="post">
+        <label for="mass">Enter your Mass(Kg):</label>
+        <input type="text" id="mass" name="mass">
+        <label for="height">Enter your Height(cm):</label>
+        <input type="text" id="height" name="height">
+        <input type="submit" value="Calculate">
+    </form>
+    {% if bmi %}
+    <p>Your bmi is: {{ bmi }}</p>
+    {% endif %}
+</body>
+
+</html>
